@@ -260,6 +260,209 @@ main {
   border-radius: var(--border-radius-md);
 }
 
+/* contact page */
+
+main .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .title h1{
+  text-align: center;
+  color: var(--primary-color);
+  font-size: var(--font-size-h2);
+  margin: 20px 0;
+}
+
+main .contact-grid {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  gap: var(--spacing-md);
+}
+
+main .contact-grid .company-info {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+main .contact-grid .company-info h2 {
+  color: var(--primary-color);
+  font-size: var(--font-size-h2);
+  margin: 20px 0;
+}
+
+main .contact-grid .company-info address {
+  font-style: normal;
+}
+
+main .contact-grid .company-info address p {
+  padding: var(--spacing-xs)  ;
+}
+
+main .contact-grid .map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+main .company-hours {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+main .company-hours h2 {
+  color: var(--primary-color);
+  font-size: var(--font-size-h2);
+  margin: 20px 0;
+}
+
+main .company-hours .hours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+main .company-hours .hours p {
+  padding: var(--spacing-xs)  ;
+}
+
+main .team-section {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+main .team-section h2 {
+  color: var(--primary-color);
+  font-size: var(--font-size-h2);
+  margin: 20px 0;
+}
+
+main .team-section .team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+main .team-section .team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+main .team-section .team-grid figure {
+  margin: 0;
+  padding: 0;
+}
+
+main .team-section .team-grid img {
+/* make an avatar */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+main .team-section .team-grid h3 {
+  color: var(--primary-color);
+  font-size: var(--font-size-h3);
+  margin: 10px 0;
+}
+
+main .team-section .team-grid p {
+  text-align: center;
+}
+
+/* Form */
+
+main .contact-form {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+main .contact-form h2 {
+  color: var(--primary-color);
+  font-size: var(--font-size-h2);
+  margin: 20px 0;
+}
+
+main .contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+main .contact-form form label {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+}
+
+main .contact-form form input,
+main .contact-form form textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--primary-color);
+}
+
+main .contact-form form .form-group .radio-group {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+main .contact-form form .form-group .radio-group label {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+}
+
+main .contact-form form .form-group .radio-group input {
+  width: auto;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--primary-color);
+}
+
+main .contact-form form .checkbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+main .contact-form form .checkbox label {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+}
+
+main .contact-form form .checkbox input {
+  width: auto;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--primary-color);
+}
+
+
+main .contact-form form button {
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: var(--font-weight-bold);
+}
+
+
 /* Footer */
 footer {
   display: grid;
